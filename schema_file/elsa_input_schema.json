@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://github.com/digidude/learning-pandas/blob/main/schema_file/elsa_input_schema.json",
+    "title": "ELSA Input Object",
+    "description": "ELSA Input File for cloud hosted elsa analysis",
+    "type": "object",
+    "properties": {
+        "protect_budget": {
+            "description": "protection budget",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "manage_budget": {
+            "description": "manage budget",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "restore_budget": {
+            "description": "restore budget",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "green_budget": {
+            "description": "urban greening budget",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "protected": {
+            "description": "Is protected",
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "protect_budget",
+        "manage_budget",
+        "restore_budget",
+        "green_budget",
+        "protected"
+    ]
+}
