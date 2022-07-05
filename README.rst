@@ -1,4 +1,4 @@
 Initial README
 ==============
 
-Fill me in
+Readme file change to test command line commit
